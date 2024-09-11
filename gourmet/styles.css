@@ -1,0 +1,221 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding: 20px;
+    background-color: white;
+    box-shadow:0px 2px 5px rgba(0, 0, 0, 0.16),0px 2px 10px rgba(0, 0, 0, 0.12);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav-contents{
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 5px; 
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.logo a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.nav-right-contents ul li{
+    list-style: none;
+    display: inline-block;
+}
+.nav-right-contents ul li a{
+    text-decoration: none;
+    color: black; 
+    padding: 5px;
+    font-size:16px;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+.nav-right-contents ul li a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+.home-contents img{
+    width: 100%;
+    height: auto;
+}
+.home-contents{
+    padding: 2px 2px 10px ;
+    position: relative;
+    top: -66px;
+}
+.home-left-contents h1{
+    padding: 10px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(10%,-60%);
+    font-size: 40px;
+    font-weight: lighter;
+    color: #7a7878;
+}
+.content-page{
+    padding: 0px 150px;
+}
+hr{
+    border:solid 1px #ccc;
+}
+.about-page{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.about-page img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    padding: 12px 24px 12px 0px;
+    opacity: 0.9;
+}
+.about-contents {
+    padding: 12px 0px 12px 24px;
+}
+.about-contents h1{
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 25px 0px;
+}
+.about-contents h3{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-align: center;
+    padding: 25px 0px;
+}
+.about-contents p{
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding: 25px 0px;
+}
+.about-contents span{
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    color: #aaa8a8;
+    padding: 25px 0px;
+}
+.menu-page{
+    display: flex;
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.menu-page img{
+    width: 50%;
+    height: auto;
+    padding: 12px 0px 12px 24px;
+    margin: auto;
+    opacity: 0.9;
+}
+.menu-contents{
+    padding: 12px 24px 12px 0px;
+}
+.menu-contents h1{
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.menu-contents h3{
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding: 25px 0px;
+}
+.menu-contents p{
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+.contact-page{
+    margin: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.contact-contents{
+    padding: 12px 0px 12px 0px;
+}
+.contact-contents h1{
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding: 10px 0px
+}
+.contact-contents p{
+    font-size: 13px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+}
+.contact-contents span{
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: darkblue;padding: 20px 0px
+}
+.contact-page form input{
+    border: none;
+    border-bottom: solid 1px #ccc;
+    margin-top: 30px;
+    padding: 10px;
+    width: 100%;
+}
+.contact-page form input:hover{
+    border: solid 1px black;
+}
+.contact-page button{
+    margin:30px 0px 10px 0px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px
+}
+footer{
+    padding: 20px;
+    color: white;
+    background-color:#ccc;
+    text-align: center;
+}
+@media screen and (max-width:1200px) {
+    .content-page{
+        padding:0px ;
+    }
+    .about-page{
+        padding: 30px;
+    }
+    .about-page img{
+        display: none;
+    }
+    .menu-page{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .menu-page img{
+        width: 100%;
+        padding: 0px;
+    }
+    .contact-page{
+        padding: 30px;
+    }
+}
